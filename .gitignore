@@ -6,6 +6,7 @@
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
+/composer.lock
 
 *.iml
 .DS_Store
