@@ -2,16 +2,6 @@
 
 use Streams as S;
 
-/**
- * StreamTest
- *
- * @uses PHPUnit_Framework_TestCase
- * @package pepegar/streams-php
- * @version 0.1
- * @copyright Copyright (C) 2014 Pepe García
- * @author Pepe García <jl.garhdez@gmail.com>
- * @license MIT
- */
 class StreamTest extends PHPUnit_Framework_TestCase
 {
     private $array = array(1, 2, 3, 4);

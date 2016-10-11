@@ -5,16 +5,6 @@ namespace Streams\Base;
 use Streams\Interfaces;
 use Streams as S;
 
-/**
- * BaseStream
- *
- * @uses Streamer
- * @package pepegar/streams-php
- * @version 0.1
- * @copyright Copyright (C) 2014 Pepe García
- * @author Pepe García <jl.garhdez@gmail.com>
- * @license MIT
- */
 abstract class BaseStream implements Interfaces\Streamer
 {
     /**
