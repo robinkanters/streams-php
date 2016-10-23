@@ -6,11 +6,9 @@ use Streams\Base;
 
 class FloatStream extends Base\NumericStream
 {
-    public function __construct( array $elements )
+    public function __construct(array $elements)
     {
-        $this->setElements(array_map(function($item) {
-            return (float) $item;
-        }, $elements));
-        return $this;
+        parent::__construct($elements);
+        $this->map(function($e) { return (float) $e; });
     }
 }
