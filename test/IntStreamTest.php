@@ -4,7 +4,7 @@ use Streams as S;
 
 class IntStreamTest extends PHPUnit_Framework_TestCase
 {
-    private $array = [1,2,3,4,5,6,7,8,9,10];
+    private $array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     public function testConstruct()
     {
@@ -30,8 +30,8 @@ class IntStreamTest extends PHPUnit_Framework_TestCase
 
     public function testOf()
     {
-        $stream = S\IntStream::of(1,2,3,4,5);
+        $stream = S\IntStream::of(1, 2, 3, 4, 5);
         $this->assertInstanceOf('Streams\IntStream', $stream);
-        $this->assertEquals($stream->getElements(), array(1,2,3,4,5));
+        $this->assertEquals($stream->toArray(), array(1, 2, 3, 4, 5));
     }
 }

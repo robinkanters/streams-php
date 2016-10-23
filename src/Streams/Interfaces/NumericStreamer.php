@@ -2,9 +2,16 @@
 
 namespace Streams\Interfaces;
 
+use Streams\Base\BaseStream;
+
 interface NumericStreamer extends Streamer
 {
-    public function max();
-    public function min();
+    /* @return BaseStream */
     public static function of();
+
+    /* @return mixed */
+    public function max();
+
+    /* @return mixed */
+    public function min();
 }
